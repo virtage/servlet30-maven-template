@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+*** Local development Tomcat context configuration (TEMPLATE) ****************************
+
+* Customize and save as src/main/webapp/META-INF/context.xml on your local machine
+* Do not store any non-public or sensitive information in this template
+
+See http://tomcat.apache.org/tomcat-7.0-doc/config/context.html for syntax.
+-->
+<Context reloadable="true">
+
+	<!-- javax.mail.Session -->
+	<!-- <Resource
+		name="mail/Session"
+		auth="Container"
+		type="javax.mail.Session"
+		description=""
+
+		mail.debug="false"
+
+		mail.smtp.host="smtp.gmail.com"
+		mail.smtp.auth="true"
+		mail.smtp.starttls.enable="true"
+		mail.smtp.port="587"
+
+		mail.smtp.user="username@virtage.com"
+		password="secret"
+		/> -->
+
+
+	<!-- javax.sql.DataSource -->
+	<!-- <Resource
+		name="jdbc/sampledb"
+		auth="Container"
+		type="javax.sql.DataSource"
+		maxActive="15" maxIdle="15" maxWait="-1"
+		username="sampledb"
+		password="sampledb"
+		driverClassName="org.mariadb.jdbc.Driver"
+		url="jdbc:mariadb://localhost:3306/sampledb"/> -->
+
+</Context>

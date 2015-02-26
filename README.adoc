@@ -1,0 +1,24 @@
+= Real-world Servlet 3.0 Maven Template
+
+Unfortunatelly Maven still offers extremely old Java servlet web application
+archetype (template). It's a pain to prepare up-to-date Servlet 3.0 again and again.
+So we did it for lazy beings like we are.
+
+Template offers ready-to-use project with
+
+* Servlet 3.0 + JSP 2.2 APIs
+* JSTL tag library
+* sample servlet and JSP page
+* web.xml with many set error handling, init params and JNDI for JavaMail and DataSource
+* JavaMail and MariaDB JDBC driver
+* sample JPA `persistence.xml`
+* SLF4J/Logback with config for production and tests
+* Google Guava
+* latest JUnit & Mockito
+* Apache Tomcat 7.x to serve your webapp at http://localhost:8080 after `mvn tomcat7:run`
+  with hot-reloading
+
+Accompanying article is @ http://devblog.virtage.cz/?p=231.
+
+Have a nice day!
+http://virtage.cz[Virtage Software guys]

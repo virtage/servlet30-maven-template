@@ -1,0 +1,1 @@
+Hello from Servlet 3.0 Maven template brought to you by http://www.virtage.cz!

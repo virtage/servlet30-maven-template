@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="1 second" debug="true">
+
+	<appender name="OUT_SIMPLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder><pattern>[%c] %5p - %m %n</pattern>
+	</encoder></appender>
+
+	<root level="TRACE">
+		<appender-ref ref="OUT_SIMPLE" />
+	</root>
+
+</configuration>

@@ -1,0 +1,67 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<display-name>servlet30-maven-template</display-name>
+
+
+	<!-- *** Configuration *********************************************************** -->
+
+	<!-- <context-param>
+		<description>Some init param</description>
+		<param-name>name</param-name>
+		<param-value>value</param-value>
+	</context-param> -->
+
+
+	<!-- *** Resources  ************************************************************** -->
+	<!--
+	http://tomcat.apache.org/tomcat-7.0-doc/jndi-resources-howto.html
+	-->
+	<!-- <resource-ref>
+		<description></description>
+		<res-ref-name>mail/Session</res-ref-name>
+		<res-type>javax.mail.Session</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref> -->
+
+	<!-- <resource-ref>
+		<description></description>
+		<res-ref-name>jdbc/sampledb</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref> -->
+
+
+	<!-- *** JSP config ************************************************************** -->
+
+	<jsp-config>
+		<!-- Change default encoding for JSP from ISO-8859-1 to UTF-8  -->
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<page-encoding>UTF-8</page-encoding>
+			<default-content-type>text/html; charset=UTF-8</default-content-type>
+		</jsp-property-group>
+	</jsp-config>
+
+
+	<!-- *** Error handling ********************************************************** -->
+
+	<!--
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/WEB-INF/error.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/404.jsp</location>
+	</error-page>
+	-->
+
+
+	<!-- *** Servlet URL mappings **************************************************** -->
+
+	<!-- URL mappings done using Servlet 3.0 annotation -->
+
+</web-app>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+ http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+
+	<persistence-unit name="sampledb" transaction-type="RESOURCE_LOCAL">
+
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+		<!-- JNDI name. Must much to <res-ref-name> in web.xml -->
+		<non-jta-data-source>java:comp/env/jdbc/sampledb</non-jta-data-source>
+
+		<properties>
+			<!-- Logging -->
+			<!-- <property name="javax.persistence.logging.level" value="ALL"/>
+            <property name="javax.persistence.logging.thread" value="false"/>
+            <property name="javax.persistence.logging.session" value="false"/>
+            <property name="javax.persistence.logging.timestamp" value="false"/>
+            <property name="javax.persistence.logging.exceptions" value="true"/> -->
+		</properties>
+	</persistence-unit>
+</persistence>
